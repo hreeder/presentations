@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to the IndieWeb</title>
+
+	<meta name="description" content="An introduction to owning your own data with the IndieWeb">
+	<meta name="author" content="Harry Reeder">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<style>
+	.reveal i{
+	    font-family: 'FontAwesome';
+	    font-style: normal;
+	}
+	</style>
+
+	<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+		        <h1>Welcome to the IndieWeb</h1>
+		        <h4>An Introduction to Owning Your Own Data</h4>
+				<br><br><br><br>
+				<div>
+					<h3>Harry Reeder</h3>
+					<h5>Edinburgh Napier University</h5>
+				</div>
+			</section>
+
+			<section class="present" data-markdown data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:">
+				##About Me
+				* Harry Reeder
+				* 4th Year Software Engineer, Edinburgh Napier
+				* <i class="fa fa-twitter"></i> @harry_reeder
+				* <i class="fa fa-comment"></i> tbrb on freenode - find me in `#compsoc-uk`
+				* IBMer
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+	<script>
+		Reveal.initialize({
+			controls: false,
+			progress: true,
+			history: true,
+
+			theme: Reveal.getQueryHash().theme,
+			transition: Reveal.getQueryHash().transition || 'default',
+
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+			]
+		});
+	</script>
+</body>
+</html>
